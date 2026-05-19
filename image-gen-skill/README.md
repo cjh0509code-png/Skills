@@ -1,3 +1,11 @@
+---
+name: 图片生成工具
+emoji: 🎨
+category: AI 工具
+skill: image-gen-skill
+description: 在 Claude Code 中直接生成 AI 图片，支持火山引擎、阿里百炼、Gemini、Azure 四大供应商，自动优化提示词。
+---
+
 # image-gen — Claude Code 图片生成 Skill
 
 在 Claude Code 中直接生成 AI 图片。支持火山引擎、阿里百炼、Google Gemini、Azure OpenAI 四大供应商，自动将任意描述/文档内容转为适合图片模型的详细英文提示词。

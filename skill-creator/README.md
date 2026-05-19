@@ -1,3 +1,11 @@
+---
+name: Skill 创建向导
+emoji: 🏗️
+category: AI 工具
+skill: skill-creator
+description: 面向非技术用户的顾问式访谈向导，4 个问题打包生成可直接安装的 AI 专属助手 Skill。
+---
+
 # skill-creator
 
 面向完全不懂技术的业务人员的顾问式 AI 技能创建向导。
