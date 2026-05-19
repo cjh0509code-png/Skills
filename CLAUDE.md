@@ -9,22 +9,26 @@
 
 ## 目录结构规则
 
-每个 Skill 必须是根目录下的**独立文件夹**，文件夹内必须有 `README.md`：
+每个 Skill 必须放在 **`skills/` 子目录**下的独立文件夹内，文件夹内必须有 `README.md`：
 
 ```
 Skills/                      ← 仓库根目录
-├── image-gen-skill/
-│   ├── README.md            ← 必须有，博客读取此文件
-│   └── SKILL.md             ← Claude Code 安装用
-├── skill-creator/
-│   ├── README.md
-│   ├── SKILL.md
-│   └── references/
-└── CLAUDE.md                ← 本文件，不会被读取为 Skill
+├── skills/                  ← 所有 Skill 统一放这里
+│   ├── image-gen-skill/
+│   │   ├── README.md        ← 必须有，博客读取此文件
+│   │   └── SKILL.md         ← Claude Code 安装用
+│   └── skill-creator/
+│       ├── README.md
+│       ├── SKILL.md
+│       └── references/
+├── CLAUDE.md                ← 本文件，不会被读取为 Skill
+├── LICENSE
+└── .gitignore
 ```
 
 **禁止**：
-- 把 README.md 直接放根目录（会被忽略，不识别为 Skill）
+- 把 Skill 文件夹放到仓库根目录（必须在 `skills/` 子目录下）
+- 把 README.md 直接放在 `skills/` 目录下（需再套一层文件夹）
 - 用单个 `.md` 文件代替文件夹（必须是"文件夹 + README.md"）
 
 ---
@@ -93,7 +97,7 @@ npx skills add cjh0509code-png/Skills --skill skill-creator
 
 ## 新增 Skill 的完整步骤
 
-1. 在根目录创建文件夹，名称格式：`全小写-连字符`（如 `code-reviewer`）
+1. 在 `skills/` 子目录下创建文件夹，名称格式：`全小写-连字符`（如 `code-reviewer`）
 2. 在文件夹内创建 `README.md`，顶部写 frontmatter（参考上方格式）
 3. 在 `README.md` 正文中加入 `## 安装` 章节，使用固定安装命令（见上方规范）
 4. 在文件夹内创建 `SKILL.md`（Claude Code 安装使用的主文件）
