@@ -22,11 +22,10 @@ description: 在 Claude Code 中直接生成 AI 图片，支持火山引擎、�
 
 ## 安装
 
-**1. 复制 Skill 文件**
+**1. 安装 Skill**
 
 ```bash
-mkdir -p ~/.claude/skills/image-gen
-cp SKILL.md ~/.claude/skills/image-gen/SKILL.md
+npx skills add cjh0509code-png/Skills --skill image-gen-skill
 ```
 
 **2. 配置 API Key**（至少一个，可以同时配置多个）

@@ -40,7 +40,7 @@ skill-creator/
 ## 安装
 
 ```bash
-npx skills add <owner/repo> --skill skill-creator
+npx skills add cjh0509code-png/Skills --skill skill-creator
 ```
 
 ## 参考文档

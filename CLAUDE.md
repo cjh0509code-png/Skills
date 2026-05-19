@@ -65,13 +65,40 @@ npx skills add cjh0509code-png/Skills --skill <skill字段值>
 
 ---
 
+## 安装指令规范
+
+每个 Skill 的 `README.md` 正文中**必须**包含安装章节，且安装命令格式固定不变：
+
+```bash
+npx skills add cjh0509code-png/Skills --skill <skill字段值>
+```
+
+- `cjh0509code-png/Skills` 是固定的，不得修改
+- `<skill字段值>` 替换为该 Skill 的 `skill` frontmatter 字段值（即文件夹名）
+- 章节标题统一写 `## 安装`
+
+示例（skill-creator）：
+
+```markdown
+## 安装
+
+\`\`\`bash
+npx skills add cjh0509code-png/Skills --skill skill-creator
+\`\`\`
+```
+
+**禁止**写其他形式的安装说明（如手动复制文件路径、其他包管理命令等）。
+
+---
+
 ## 新增 Skill 的完整步骤
 
 1. 在根目录创建文件夹，名称格式：`全小写-连字符`（如 `code-reviewer`）
 2. 在文件夹内创建 `README.md`，顶部写 frontmatter（参考上方格式）
-3. 在文件夹内创建 `SKILL.md`（Claude Code 安装使用的主文件）
-4. 如有辅助文件（模板、引用文档），放在 `references/` 子目录
-5. 提交并推送
+3. 在 `README.md` 正文中加入 `## 安装` 章节，使用固定安装命令（见上方规范）
+4. 在文件夹内创建 `SKILL.md`（Claude Code 安装使用的主文件）
+5. 如有辅助文件（模板、引用文档），放在 `references/` 子目录
+6. 提交并推送
 
 ---
 
