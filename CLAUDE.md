@@ -137,3 +137,4 @@ refactor: restructure <skill-name>    # 重构
 |-------|---------|
 | image-gen-skill | AI 工具 |
 | skill-creator | AI 工具 |
+| frontend-skill-creator | AI 工具 |

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "skill-creator": {
+      "source": "cjh0509code-png/Skills",
+      "sourceType": "github",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "computedHash": "ca26780038de9e760da972bcbcd70dc4e90ced6eee1a3d0e4582a472ef3ce1eb"
+    }
+  }
+}
